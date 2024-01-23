@@ -1,0 +1,12 @@
+doctype html
+html(lang="pt-br")
+  head
+    title Página Inicial
+    meta(name='viewport' content='width=device-width,initial-scale=1')
+    script(src="https://unpkg.com/htmx.org@1.7.0/dist/htmx.min.js", defer)
+    link(rel='stylesheet' href='/public/style.css')
+  body
+    h1 Página Inicial
+    include includes/nav
+
+    div#content-container(hx-trigger="load")
