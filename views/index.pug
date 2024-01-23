@@ -5,8 +5,11 @@ html(lang="pt-br")
     meta(name='viewport' content='width=device-width,initial-scale=1')
     script(src="https://unpkg.com/htmx.org@1.7.0/dist/htmx.min.js", defer)
     link(rel='stylesheet' href='/public/style.css')
+    link(rel='stylesheet' href='/public/tailwind-build.css')
   body
-    h1 Página Inicial
+    h1.text-3xl.m-1 Htmx + Pug + Tailwind
     include includes/nav
 
-    div#content-container(hx-trigger="load")
+    div.m-5
+      div#content-container(hx-trigger="load")
+

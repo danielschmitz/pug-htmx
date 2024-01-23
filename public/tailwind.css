@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav > a {
+  @apply bg-slate-200 rounded-lg p-2;
+}
+
+nav > a:hover {
+  @apply bg-white;
+}

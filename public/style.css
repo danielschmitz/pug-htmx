@@ -4,7 +4,3 @@ nav {
   flex-wrap: wrap;
   gap: 10px;
 }
-
-nav > a:hover {
-  background-color: aquamarine;
-}
