@@ -25,6 +25,11 @@ app.get("/pagina2", (req, res) => {
   res.render("pagina2");
 });
 
+app.get("/:name", function (req, res) {
+  var name = req.params.name;
+  res.render(name);
+});
+
 // Rota para lidar com o envio do formulário
 app.post("/submitForm", express.urlencoded({ extended: true }), (req, res) => {
   const { nome, telefone } = req.body;
